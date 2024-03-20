@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Hoefler";
+  src: url("./pic/Hoefler-Text.ttf");
+}
+
+.background {
+  overflow: hidden;
+  max-height: 100vh;
+  background-image: url("./pic/background-07.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right bottom;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(27, 10, 52);
+}
+
+/*img {
+  max-width: 100%;
+  max-height: 100%;
+}*/
+
+
+h1,
+span {
+  /* shining shadow around text */
+  text-shadow: 0 0 10px white;
+  color:#FFFFFF;
+}
+/*home page star====*/
+
+.home-star-container {
+  position: fixed;
+  right: 0;
+  padding-right: 1%;
+  margin-top: 2%;
+  align-items: center;
+  display: none;
+  opacity: 1;
+}
+
+.home-star {
+  margin-top: 4%;
+  padding-left: 0;
+  margin-top: inherit;
+  float: right;
+  height: 1.2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+
+div.home-star-container:hover {
+  height: 1.25em;
+  font-size: 1.25em;
+  opacity: 1;
+}
+
+
+/*zodiacword&takeaview========*/
+.zodiacword {
+       height:30vh;
+           width:35vw;
+      position:fixed;
+           top:53vh;
+                       
+         }
+.button1 {
+  text-align:center;
+  background-color:#EEEEEE;
+  color: rgb(27, 10, 52);
+  font-size: 1.4vw;
+  font-family: "Hoefler";
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 1s;
+  position:fixed;
+  height:4.5vh;
+  width:8vw;
+  top:83vh;
+  left:2vw;
+  z-index:2;
+}
+/*12stars=======*/
+.12stars-main-container {
+  width: 50%;
+  margin-top: 1%;
+  padding-left: 1%;
+}
+table{
+	border-spacing: 5vw 5vh;
+}
+td {
+  border-spacing: 0;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+img[id^="stars"]+p {
+  
+  margin-top: -5%;
+  margin-bottom: -5%;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: default;
+}
+img[id^="stars"] {
+  object-fit: contain;
+  opacity: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+img[id^="stars"]:hover {
+  opacity: 100%;
+}
+img#stars1+p,
+img#stars2+p,
+img#stars10+p {
+  margin-left: -5%;
+}
+
+img#stars4+p,
+img#stars5+p,
+img#stars11+p,
+img#stars12+p {
+  margin-left: 25%;
+}
+
+img#stars6+p {
+  margin-left: 45%;
+}
+
+img#stars7+p,
+img#stars8+p {
+  margin-left: 90%;
+}
+
+img[id^="stars"]:hover+p {
+  /* name of a star*/
+  opacity: 100%
+}
+
+img[src="./pic/stars-lw.png"] {
+  height: 2vw;
+}
+
+img[src="./pic/stars-sw.png"] {
+  height: 1.3vw;
+}
+
+img[src="./pic/stars-sb.png"] {
+  height: 1.5vw;
+}
+
+
+img#stars1 {
+  margin: 6% 0 0 8%;
+}
+
+img#stars2 {
+  margin: 30% 0 0 10%;
+}
+
+img#stars3 {
+  margin: 2% 0 0 5%;
+}
+
+img#stars4 {
+  margin: 0% 0 0 42%;
+}
+
+img#stars5 {
+  margin: 25% 0 0 50%;
+}
+
+img#stars6 {
+  margin: 20% 0 0 60%;
+}
+
+img#stars7 {
+  margin: 0% 0 0 89%;
+}
+
+img#stars8 {
+  margin: 0% 0 0 95%;
+}
+
+img#stars9 {
+  margin: 55% 0 0 5%;
+}
+
+img#stars10 {
+  margin: 30% 0 0 0;
+}
+
+img#stars11 {
+  margin: 5% 0 0 40%;
+}
+
+img#stars12 {
+  margin: -5% 0 0 36%;
+}
+
+/*choose your zodiac=====*/
+h1 {
+  font-weight: normal;
+  font-size: 6em;
+  margin-block-start: 0;
+    margin-block-end: -0.15em;
+}
+
+.chooseyourzodiac {
+  position: fixed;
+  top:45vh;
+  left:3vw;
+  padding-right: 1%;
+  margin-top: 2%;
+  align-items: center;
+  display: none;
+  opacity: 1;
+}
+
+
+/*data of 12 zodiac=========*/
+
+.normaltext {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: large;
+  color:#FFFFFF;
+}
+hr {
+  /* just a line. */
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+img[id^="data"] {
+  margin-top: 5vh;
+}
+.none {
+  width: 35vw;
+  padding-left: 5%;
+  display: none;
+}
+.zodiacstar{
+  height:25vh; 
+  top:3vh;
+	
+}
+.zodiacsign{
+  height:25vh;
+  top:3vh;
+
+}
+/*rocket=========*/
+#rocket {
+  background-position:top;
+  background-size: 65%;
+  position:absolute;
+  top:36vh;
+  left:-130vw;
+  background-image: url(./pic/rocket_smokeeffect02.png);
+  height:400vh;
+  width:400vw;
+  background-repeat:no-repeat;
+  z-index:1;
+  transition:0.1s;
+}
+
+
+
+
+
+
+
